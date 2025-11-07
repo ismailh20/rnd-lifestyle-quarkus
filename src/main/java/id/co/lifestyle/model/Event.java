@@ -20,7 +20,7 @@ public class Event {
     @Column(columnDefinition = "text")
     private String description;
 
-    private String location;
+    public String location;
 
     @Column(name = "start_date")
     private LocalDateTime startDate;
