@@ -12,4 +12,8 @@ public class EventRepository implements PanacheRepository<Event> {
     public Optional<Event> findByEventIdAndMerchantId(Integer eventId, Integer merchantId) {
         return find("id = ?1 AND merchantId = ?2", eventId, merchantId).firstResultOptional();
     }
+
+    public Event findById(String id) {
+        return find("id", id).firstResult();
+    }   
 }

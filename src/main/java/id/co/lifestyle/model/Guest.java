@@ -2,7 +2,6 @@ package id.co.lifestyle.model;
 
 import jakarta.persistence.*;
 
-import java.io.Serial;
 import java.util.List;
 
 @Entity

@@ -11,4 +11,8 @@ public class TicketRepository implements PanacheRepository<Ticket> {
     public List<Ticket> findByEvent(Integer eventId) {
         return list("eventId", eventId); 
     }
+
+    public Ticket findById(Integer id) {
+        return find("id", id).firstResult();
+    }
 }
